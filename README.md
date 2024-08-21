@@ -16,6 +16,15 @@
 - [Usage](#usage)
 - [License](#license)
 
+## Live Demo
+
+Check out the deployed version of the TapMe Web App:
+
+- **Web App with Specific Telegram ID**: [TapMe Game](https://co3-labs-task-tap-me-telegram-web-app.vercel.app/?telegramId=1)
+- **Web App Base URL**: [TapMe Game](https://co3-labs-task-tap-me-telegram-web-app.vercel.app/)
+
+You can interact with the app directly through these links.
+ 
 ## Features
 
 - **Telegram Bot Integration**: Users interact with the app via a Telegram bot, which directs them to the web app.
@@ -44,6 +53,34 @@
 - Node.js and npm installed on your machine.
 - A MongoDB database (you can use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for a cloud-based solution).
 - A Telegram bot token. You can create a bot and get the token using [BotFather](https://core.telegram.org/bots#botfather).
+
+## Usage
+
+1. Users interact with the Telegram bot, which provides a link to the web app.
+2. Users can access the web app directly using the following links:
+   - **Web App with Telegram ID (Example)**: [TapMe Game](https://co3-labs-task-tap-me-telegram-web-app.vercel.app/?telegramId=1)
+   - **Web App Main URL**: [TapMe Main](https://co3-labs-task-tap-me-telegram-web-app.vercel.app/)
+3. In the app, users can tap to earn coins, and their coin balance is updated in real-time.
+4. The app tracks the user's coin balance in real-time and displays it on the screen.
+
+## Deployment
+
+### Deployed Frontend URL
+
+- **Main App**: [https://co3-labs-task-tap-me-telegram-web-app.vercel.app/](https://co3-labs-task-tap-me-telegram-web-app.vercel.app/)
+- **App with Example Telegram ID**: [https://co3-labs-task-tap-me-telegram-web-app.vercel.app/?telegramId=1](https://co3-labs-task-tap-me-telegram-web-app.vercel.app/?telegramId=1)
+
+### Deploying the Backend
+
+1. Deploy the backend on a platform like [Render](https://render.com/) or [Heroku](https://www.heroku.com/).
+2. Update the `WEBHOOK_URL` in the backend code to point to your deployed backend URL.
+
+### Deploying the Frontend
+
+1. The frontend is deployed on Vercel. You can access the app at the following URLs:
+   - Main App: [https://co3-labs-task-tap-me-telegram-web-app.vercel.app/](https://co3-labs-task-tap-me-telegram-web-app.vercel.app/)
+   - Example with Telegram ID: [https://co3-labs-task-tap-me-telegram-web-app.vercel.app/?telegramId=1](https://co3-labs-task-tap-me-telegram-web-app.vercel.app/?telegramId=1)
+
 
 ### Installation
 
