@@ -488,7 +488,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const TelegramBot = require('node-telegram-bot-api');
-const User = require('./models/User'); // Assuming you have a User model defined
+const User = require('./models/User'); // Import the User model
 
 dotenv.config();
 
@@ -504,14 +504,6 @@ app.use(express.json());
 mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('MongoDB connected'))
   .catch((err) => console.log(err));
-
-// Define the User model schema (make sure this matches your schema definition)
-const userSchema = new mongoose.Schema({
-  telegramId: String,
-  coinBalance: { type: Number, default: 0 },
-});
-
-const User = mongoose.model('User', userSchema);
 
 // Basic Route
 app.get('/', (req, res) => {
@@ -586,3 +578,4 @@ const startServer = (port) => {
 };
 
 startServer(currentPort);
+
